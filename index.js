@@ -5,7 +5,9 @@ import AttacherViews from './views/AttacherViews';
 import { renderDOM, renderView } from './views/render';
 import './index.css';
 import * as backend from './build/index.main.mjs';
-import * as reach from '@reach-sh/stdlib/CFX';  //选择测试网
+import { loadStdlib } from "@reach-sh/stdlib";  //ETH测试网
+const reach = loadStdlib(process.env);
+//import * as reach from '@reach-sh/stdlib/CFX';  //Conflux测试网
 
 const intToOutcome = ['Bob wins!', 'Draw!', 'Alice wins!'];
 const {standardUnit} = reach;
