@@ -5,6 +5,7 @@ const exports = {};
 
 exports.GetStep = class extends React.Component {
   render() {
+    // eslint-disable-next-line
     const {parent, playable, pos, oppoPos, step} = this.props;
     return (
       <div>
